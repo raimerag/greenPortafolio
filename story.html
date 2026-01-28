@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>story</title>
+  </head>
+  <body class="text-white bg-gray-950">
+    <main class="story">
+      <!-- HERO -->
+      <section class="story-hero">
+        <h1 id="title"></h1>
+        <p id="subtitle"></p>
+        <div id="badges" class="badges"></div>
+      </section>
+
+      <!-- GALERÍA -->
+      <section class="story-gallery object-cover" id="gallery"></section>
+
+      <!-- HISTORIA -->
+      <section class="story-content">
+        <h2>Contexto</h2>
+        <p id="context"></p>
+
+        <h2>Qué resuelve</h2>
+        <p id="solution"></p>
+
+        <h2>Mi rol</h2>
+        <p id="role"></p>
+      </section>
+
+      <!-- CTA -->
+      <section class="story-cta">
+        <a id="liveLink" target="_blank">Ver proyecto</a>
+        <a href="/" class="secondary">Volver al portafolio</a>
+      </section>
+    </main>
+    <script type="module" src="./assets/js/story.js"></script>
+  </body>
+</html>

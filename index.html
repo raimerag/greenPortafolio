@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Green Portafolio</title>
+  </head>
+
+  <!-- arreglar imagen del proyecto Blog de Cafe LISTOOOOO*-->
+  <!-- Agregar titulos y descripciones a los proyectos -->
+  <!-- Cambiar el CV por el actualizado -->
+  <!-- agregar Acerca de mi -->
+
+  <body class="text-white bg-gray-950">
+    <nav
+      class="bg-gray-900 mt-8 flex justify-around p-2 text-xs lg:text-md lg:justify-center lg:gap-[600px] lg:p-4"
+    >
+      <a class="text-green-600 font-extrabold text-sm" href="#">Inicio</a>
+      <div class="flex gap-4 lg:gap-6">
+        <a href="#educacion">Educacion</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#acerca-de-mi">Acerca de mi</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <header
+      class="flex flex-col items-center lg:flex-row lg:justify-center gap-16 m-24"
+    >
+      <div
+        class="rounded-full ring-2 ring-green-600 rounded-full shadow-[0_0_15px_5px_rgba(255,255,255,0.1)] p-2"
+      >
+        <div
+          class="w-[180px] h-[180px] lg:w-[280px] lg:h-[280px] bg-[url('./assets/img/imagen-perfil-fondo.png')] bg-cover bg-center mask-[url('./assets/img/circle-mask.svg')] mask-no-repeat"
+        ></div>
+      </div>
+      <div>
+        <h1 class="text-xl lg:text-3xl">
+          Hola, Soy {
+          <span class="text-green-600 cursor-pointer">Raimer Aguilar</span> }
+          <br />Desarrollador Front-End
+        </h1>
+        <h2 class="text-lg lg:text-xl">
+          Construyo interfaces modernas enfocadas en experiencia de usuario,
+        </h2>
+        <p class="text-sm lg:text-md lg:text-lg">
+          performance y escalabilidad usando React y Tailwind.
+        </p>
+
+        <div class="flex gap-4 mt-4 items-center">
+          <button class="btn">
+            Contacto
+          </button>
+          <a
+            href="./assets/CV/CV Raimer Aguilar.pdf"
+            download="CV-Raimer-Aguilar"
+            class="btn"
+          >
+            Descargar CV
+          </a>
+           <a class="btn" href="https://github.com/raimerag" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" aria-label="Perfil de Github" focusable="false"  viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" overflow="visible" ><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="flex flex-col justify-center items-center w-full mt-12">
+      <!-- SECCION TECNOLOGIAS -->
+      <article class="w-[90%] lg:w-[950px] mt-12">
+        <h3 class="text-2xl mb-2">Tecnologias</h3>
+        <div
+          class="bg-gray-900 flex flex-wrap gap-2 rounded-lg p-2 justify-center"
+        >
+          <!-- item  -->
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-html5 text-5xl text-green-700 m-2"></i>
+            <p>HTML5</p>
+          </div>
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-css3-alt text-5xl text-green-700 m-2"></i>
+            <p>CSS3</p>
+          </div>
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-node-js text-5xl text-green-700 m-2"></i>
+            <p>JavaScript</p>
+          </div>
+
+          <!-- <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 27 26"
+              class="w-19 h-16 text-green-700 p-2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="m.98608 0h24.32332c.5446 0 .9861.436522.9861.975v24.05c0 .5385-.4415.975-.9861.975h-24.32332c-.544597 0-.98608-.4365-.98608-.975v-24.05c0-.538478.441483-.975.98608-.975zm13.63142 13.8324v-2.1324h-9.35841v2.1324h3.34111v9.4946h2.6598v-9.4946zm1.0604 9.2439c.4289.2162.9362.3784 1.5218.4865.5857.1081 1.2029.1622 1.8518.1622.6324 0 1.2331-.0595 1.8023-.1784.5691-.1189 1.0681-.3149 1.497-.5879s.7685-.6297 1.0187-1.0703.3753-.9852.3753-1.6339c0-.4703-.0715-.8824-.2145-1.2365-.1429-.3541-.3491-.669-.6186-.9447-.2694-.2757-.5925-.523-.9692-.7419s-.8014-.4257-1.2743-.6203c-.3465-.1406-.6572-.2771-.9321-.4095-.275-.1324-.5087-.2676-.7011-.4054-.1925-.1379-.3409-.2838-.4454-.4379-.1045-.154-.1567-.3284-.1567-.523 0-.1784.0467-.3392.1402-.4824.0935-.1433.2254-.2663.3959-.369s.3794-.1824.6269-.2392c.2474-.0567.5224-.0851.8248-.0851.22 0 .4523.0162.697.0486.2447.0325.4908.0825.7382.15.2475.0676.4881.1527.7218.2555.2337.1027.4495.2216.6475.3567v-2.4244c-.4015-.1514-.84-.2636-1.3157-.3365-.4756-.073-1.0214-.1095-1.6373-.1095-.6268 0-1.2207.0662-1.7816.1987-.5609.1324-1.0544.3392-1.4806.6203s-.763.6392-1.0104 1.0743c-.2475.4352-.3712.9555-.3712 1.5609 0 .7731.2268 1.4326.6805 1.9785.4537.546 1.1424 1.0082 2.0662 1.3866.363.146.7011.2892 1.0146.4298.3134.1405.5842.2865.8124.4378.2282.1514.4083.3162.5403.4946s.198.3811.198.6082c0 .1676-.0413.323-.1238.4662-.0825.1433-.2076.2676-.3753.373s-.3766.1879-.6268.2473c-.2502.0595-.5431.0892-.8785.0892-.5719 0-1.1383-.0986-1.6992-.2959-.5608-.1973-1.0805-.4933-1.5589-.8879z"
+              ></path>
+            </svg>
+            <p>TypeScript</p>
+          </div> -->
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-react text-5xl text-green-700 m-2"></i>
+            <p>React</p>
+          </div>
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-sass text-5xl text-green-700 m-2"></i>
+            <p>Sass</p>
+          </div>
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-bootstrap text-5xl text-green-700 m-2"></i>
+            <p>Bootstrap</p>
+          </div>
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 18"
+              class="w-19 h-16 text-green-700 p-2"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0ZM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9Z"
+              ></path>
+            </svg>
+            <p>Tailwind</p>
+          </div>
+
+        
+        </div>
+      </article>
+      <!-- SECCION HERRAMIENTAS & SERVICIOS -->
+
+      <article class="w-[90%] lg:w-[950px] mt-12">
+        <h3 class="text-2xl mb-2">Herramientas & Servicios</h3>
+        <div
+          class="bg-gray-900 flex flex-wrap gap-2 rounded-lg p-2 justify-center"
+        >
+          <!-- item  -->
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-git-alt text-5xl text-green-700 m-2"></i>
+            <p>Git</p>
+          </div>
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-gulp text-5xl text-green-700 m-2"></i>
+            <p>Gulp</p>
+          </div>
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-npm text-5xl text-green-700 m-2"></i>
+            <p>npm</p>
+          </div>
+          <!-- <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-node text-5xl text-green-700 m-2"></i>
+            <p>Node</p>
+          </div> -->
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <i class="fa-brands fa-github text-5xl text-green-700 m-2"></i>
+            <p>GitHub</p>
+          </div>
+
+
+          <div
+            class="bg-gray-800 flex flex-col justify-center items-center rounded-lg p-2 hover:shadow-xs shadow-green-500/50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-19 h-16 text-green-700 p-2"
+              viewBox="0,0,256,256"
+              fill="currentColor"
+            >
+              <g
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(10.66667,10.66667)">
+                  <path
+                    d="M8.56,4.94l-6.02,10.4l3.005,-14.193c0.097,-0.457 0.712,-0.544 0.931,-0.131zM9.67,7.02l1.2,2.25l-5.53,5.23zM14.16,6.15l-1.79,1.7l-1.52,-2.86l0.973,-1.674c0.198,-0.341 0.694,-0.329 0.876,0.021zM21.13,18.74l-8.8,5.12c-0.15,0.1 -0.33,0.14 -0.5,0.14c-0.17,0 -0.35,-0.04 -0.5,-0.13l-8.05,-4.65l15.367,-14.563c0.291,-0.276 0.771,-0.114 0.837,0.281l2.126,12.772c0.07,0.41 -0.12,0.82 -0.48,1.03z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <p>FireBase</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- SECCION EDUCACION -->
+      <section id="educacion" class="w-[90%] lg:w-[950px] md:pt-[120px] pt-12">
+        <h3 class="text-2xl mb-4">Educación</h3>
+        <div class="space-y-6">
+          <!-- Item 1-->
+          <div
+            class="bg-gray-900 rounded-lg p-4 border-l-4 border-green-600 hover:shadow-xs shadow-green-500/50"
+          >
+            <h4 class="text-lg font-semibold">Bootcamp Fullstack</h4>
+            <p class="text-sm text-gray-400">
+              Desafío Latam · 2024 - Actualidad
+            </p>
+            <p class="text-sm mt-1">
+              Formación intensiva en desarrollo frontend, backend y trabajo en
+              equipo con metodologías ágiles.
+            </p>
+          </div>
+
+          <!-- Item 2-->
+          <div
+            class="bg-gray-900 rounded-lg p-4 border-l-4 border-green-600 hover:shadow-xs shadow-green-500/50"
+          >
+            <h4 class="text-lg font-semibold">
+              Aprende React desde cero: Hooks y State hasta TypeScript, MERN y
+              PERN
+            </h4>
+            <p class="text-sm text-gray-400">
+              Udemy · Juan Pablo De la Torre Valdez (En curso)
+            </p>
+            <p class="text-sm mt-1">
+              Formación en React, Hooks, State Management (Zustand, React
+              Query), TypeScript, Next.js y stacks MERN/PERN.
+            </p>
+          </div>
+
+          <!-- Item 5-->
+          <div
+            class="bg-gray-900 rounded-lg p-4 hover:shadow-xs shadow-green-500/50 border-l-4 border-green-600"
+          >
+            <h4 class="text-lg font-semibold">Desarrollo Web</h4>
+            <p class="text-sm text-gray-400">
+              Udemy · Juan Pablo De la Torre Valdez
+            </p>
+            <p class="text-sm mt-1">
+              Aprendizaje completo de HTML, CSS, SASS, Workflows y fundamentos
+              sólidos de JavaScript.
+            </p>
+          </div>
+          <!-- Item 3-->
+          <div
+            class="bg-gray-900 rounded-lg p-4 hover:shadow-xs shadow-green-500/50 border-l-4 border-green-600"
+          >
+            <h4 class="text-lg font-semibold">
+              Introducción a la programación en JavaScript
+            </h4>
+            <p class="text-sm text-gray-400">
+              Domestika · Javier Usobiaga Ferrer
+            </p>
+            <p class="text-sm mt-1">
+              Curso práctico en el que desarrollé un juego de memoria para
+              aplicar los fundamentos de JavaScript.
+            </p>
+          </div>
+          <!-- Item 3-->
+          <div
+            class="bg-gray-900 rounded-lg p-4 hover:shadow-xs shadow-green-500/50 border-l-4 border-green-600"
+          >
+            <h4 class="text-lg font-semibold">
+              Introducción al Desarrollo Web Responsive con HTML y CSS
+            </h4>
+            <p class="text-sm text-gray-400">
+              Domestika · Javier Usobiaga Ferrer
+            </p>
+            <p class="text-sm mt-1">
+              Primer acercamiento al desarrollo web, aprendí los fundamentos de
+              HTML y CSS.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCION PROYECTOS -->
+      <section
+        id="proyectos"
+        class="w-[90%] lg:w-[950px] mt-12 md:pt-[120px] pt-12"
+      >
+        <h3 class="text-2xl mb-2">Proyectos</h3>
+
+        <div
+          class="flex justify-around gap-4 lg:gap-6 flex-wrap rounded-lg p-2"
+        >
+          <!-- cart INIT 0-->
+          <article
+            class="bg-gray-900 w-[280px] h-[400px] p-3 rounded-lg flex flex-col gap-2 hover:shadow-green-500/50 transition"
+          >
+            <!-- Imagen -->
+            <img
+              src="./assets/img/neexosapp.png"
+              alt="GuitarLats ecommerce"
+              class="rounded-md h-[160px] object-cover"
+            />
+
+            <!-- Título -->
+            <h4 class="text-sm font-semibold text-center">Neexos</h4>
+
+            <!-- Tech badges -->
+            <div class="flex justify-center gap-2">
+              <span class="badge">React</span>
+              <span class="badge">firebase</span>
+              <span class="badge">Saas</span>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-xs text-gray-400 text-center px-2 mt-2">
+              Marketplace de emprendimientos desarrollado en React, con
+              geolocalización, autenticación y arquitectura escalable.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-auto flex justify-around items-center items-center">
+              <a
+                href="/story.html?project=neexos"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver historia
+              </a>
+              <a
+                href="https://neexos.app"
+                target="_blank" rel="noopener noreferrer"
+                
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver proyecto
+              </a>
+        <span
+      class="relative group cursor-not-allowed text-gray-500"> 
+      <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          class="h-5 w-5"
+          fill="currentColor"
+      >
+        <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+       </svg>
+
+        <span
+           class="absolute bottom-7 left-1/2 -translate-x-1/2
+           whitespace-nowrap text-[10px] px-2 py-1
+           bg-gray-800 text-white rounded
+           opacity-0 group-hover:opacity-100 transition"
+        >
+          Repositorio privado
+        </span>
+        </span>
+            </div>
+          </article>
+
+          <!-- cart END-->
+
+          <!-- cart INIT 1-->
+          <article
+            class="bg-gray-900 w-[280px] h-[400px] p-3 rounded-lg flex flex-col gap-2 hover:shadow-green-500/50 transition"
+          >
+            <!-- Imagen -->
+            <img
+              src="./assets/img/la-pizzeria.png"
+              alt="GuitarLats ecommerce"
+              class="rounded-md h-[160px] object-cover"
+            />
+
+            <!-- Título -->
+            <h4 class="text-sm font-semibold text-center">
+              Pizzeria Mamma Mia
+            </h4>
+
+            <!-- Tech badges -->
+            <div class="flex justify-center gap-2">
+              <span class="badge">React</span>
+              <span class="badge">Tailwind</span>
+              <span class="badge">JavaScript</span>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-xs text-gray-400 text-center px-2 mt-2">
+              Frontend en React JS integrado a una API REST con JWT, con carrito
+              de compras y autenticación de usuarios.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-auto flex justify-around items-center">
+              <a
+                href="/story.html?project=pizzeria"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver historia
+              </a>
+              <a
+                href="https://pizzeria-bao9a03pj-raimers-projects.vercel.app"
+                target="_blank" rel="noopener noreferrer"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver proyecto
+              </a>
+               <a  href="https://github.com/raimerag/Hito8-ReactPizza" target="_blank" rel="noopener noreferrer" class="transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90">
+              <svg aria-hidden="true" aria-label="Perfil de Github" focusable="false" viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" overflow="visible" ><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+            </div>
+          </article>
+
+          <!-- cart END-->
+
+          <!-- cart INIT 2-->
+          <article
+            class="bg-gray-900 w-[280px] h-[400px] p-3 rounded-lg flex flex-col gap-2 hover:shadow-green-500/50 transition"
+          >
+            <!-- Imagen -->
+            <img
+              src="./assets/img/guitarlats.png"
+              alt="GuitarLats ecommerce"
+              class="rounded-md h-[160px] object-cover"
+            />
+
+            <!-- Título -->
+            <h4 class="text-sm font-semibold text-center">GuitarLa</h4>
+
+            <!-- Tech badges -->
+            <div class="flex justify-center gap-2">
+              <span class="badge">React</span>
+              <span class="badge">Tailwind</span>
+              <span class="badge">TypeScript</span>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-xs text-gray-400 text-center px-2 mt-2">
+              Tienda online para la venta de guitarras con catálogo y diseño
+              responsive.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-auto flex justify-around items-center">
+              <a
+                href="/story.html?project=guitarla"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver historia
+              </a>
+              <a
+                href="https://guitarlats-five.vercel.app/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver proyecto
+              </a>
+                <a  href="https://github.com/raimerag/Guitarlats" target="_blank" rel="noopener noreferrer" class="transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90">
+              <svg aria-hidden="true" aria-label="Perfil de Github" focusable="false" viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" overflow="visible" ><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+            </div>
+          </article>
+
+          <!-- cart END-->
+
+          <!-- cart INIT 3-->
+          <article
+            class="bg-gray-900 w-[280px] h-[400px] p-3 rounded-lg flex flex-col gap-2 hover:shadow-green-500/50 transition"
+          >
+            <!-- Imagen -->
+            <img
+              src="./assets/img/Elcomedor.png"
+              alt="GuitarLats ecommerce"
+              class="rounded-md h-[160px] object-cover"
+            />
+
+            <!-- Título -->
+            <h4 class="text-sm font-semibold text-center">El Comedor</h4>
+
+            <!-- Tech badges -->
+            <div class="flex justify-center gap-2">
+              <span class="badge">React</span>
+              <span class="badge">Tailwind</span>
+              <span class="badge">JavaScript</span>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-xs text-gray-400 text-center px-2 mt-2">
+              Aplicación web con Firebase para gestionar colaciones y
+              confirmaciones de asistencia en tiempo real.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-auto flex justify-around items-center">
+              <a
+                href="/story.html?project=comedor"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver historia
+              </a>
+              <a
+                href="https://el-comedor-3ymbqs15f-raimers-projects.vercel.app"
+                target="_blank" rel="noopener noreferrer"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver proyecto
+              </a>
+                </a>
+                <a  href="https://github.com/raimerag/ElComedor" target="_blank" rel="noopener noreferrer" class="transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90">
+              <svg aria-hidden="true" aria-label="Perfil de Github" focusable="false" viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" overflow="visible" ><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+            </div>
+          </article>
+          <!-- cart END-->
+
+          <!-- cart INIT 4-->
+          <article
+            class="bg-gray-900 w-[280px] h-[400px] p-3 rounded-lg flex flex-col gap-2 hover:shadow-green-500/50 transition"
+          >
+            <!-- Imagen -->
+            <img
+              src="./assets/img/ProyectoBienesRaices.png"
+              alt="GuitarLats ecommerce"
+              class="rounded-md h-[160px] object-cover"
+            />
+
+            <!-- Título -->
+            <h4 class="text-sm font-semibold text-center">Bienes Raices</h4>
+
+            <!-- Tech badges -->
+            <div class="flex justify-center gap-2">
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">Sass</span>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-xs text-gray-400 text-center px-2 mt-2">
+              Sitio web inmobiliario desarrollado con HTML, CSS y Sass, con modo
+              oscuro y claro.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-auto flex justify-around items-center">
+              <a
+                href="/story.html?project=raices"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver historia
+              </a>
+              <a
+                href="https://bienes-raices-djoa743m0-raimers-projects.vercel.app/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver proyecto
+              </a>
+                 </a>
+                <a  href="https://github.com/raimerag/BienesRaicesSas" target="_blank" rel="noopener noreferrer" class="transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90">
+              <svg aria-hidden="true" aria-label="Perfil de Github" focusable="false" viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" overflow="visible" ><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+            </div>
+          </article>
+          <!-- cart END-->
+
+          <!-- cart INIT 5-->
+          <article
+            class="bg-gray-900 w-[280px] h-[400px] p-3 rounded-lg flex flex-col gap-2 hover:shadow-green-500/50 transition"
+          >
+            <!-- Imagen -->
+            <img
+              src="./assets/img/blog-cafe.webp"
+              alt="GuitarLats ecommerce"
+              class="rounded-md h-[160px] object-cover"
+            />
+
+            <!-- Título -->
+            <h4 class="text-sm font-semibold text-center">Blog de Café</h4>
+
+            <!-- Tech badges -->
+            <div class="flex justify-center gap-2">
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-xs text-gray-400 text-center px-2 mt-2">
+              Sitio web enfocado en el mundo del café, donde se combinan
+              recetas, cursos y contenido educativo con un diseño visual simple
+              y agradable.
+            </p>
+
+            <!-- CTA -->
+            <div class="mt-auto flex justify-around items-center">
+              <a
+                href="/story.html?project=cafe"
+                target="_blank" rel="noopener noreferrer"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver historia
+              </a>
+              <a
+                href="https://superb-faun-985f10.netlify.app/"
+                class="text-xs px-3 py-2 border border-green-700 rounded-md text-center hover:bg-green-700/90 hover:text-white hover:shadow-sm transition-transform duration-150 hover:translate-x-0.5"
+              >
+                Ver proyecto
+              </a>
+                <a  href="https://github.com/raimerag/BlogDeCafe" target="_blank" rel="noopener noreferrer" class="transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90">
+              <svg aria-hidden="true" aria-label="Perfil de Github" focusable="false" viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" overflow="visible" ><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+            </div>
+          </article>
+          <!-- cart END-->
+        </div>
+      </section>
+    </main>
+
+    <!-- SECCION FORMULARIO -->
+    <form
+      id="contacto"
+      action=""
+      class="flex flex-col items-center mt-12 md:pt-[120px] pt-12"
+    >
+      <h3 class="text-2xl mb-2">Formulario de Contacto</h3>
+
+      <fieldset
+        class="border w-[80%] md:w-[750px] rounded-lg border-green-700 flex flex-col items-center py-8"
+      >
+        <legend class="ml-2 px-2">Datos de Reclutador/Empresa</legend>
+        <div class="m-2 flex flex-col w-[90%] md:w-96">
+          <label class="ml-2" for="nombre">Nombre:</label>
+          <input
+            class="bg-green-950 rounded-lg px-3 py-2 text-md focus:outline-none focus:ring focus:ring-green-600"
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Escribe tu nombre completo"
+          />
+        </div>
+        <div class="m-2 flex flex-col w-[90%] md:w-96">
+          <label class="ml-2" for="email">Email:</label>
+          <input
+            class="bg-green-950 rounded-lg px-3 py-2 text-md focus:outline-none focus:ring focus:ring-green-600"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="correo@ejemplo.com"
+          />
+        </div>
+        <div class="m-2 flex flex-col w-[90%] md:w-96">
+          <label class="ml-2" for="empresa">Empresa:</label>
+          <input
+            class="bg-green-950 rounded-lg px-3 py-2 text-md focus:outline-none focus:ring-2 focus:ring-green-600"
+            type="text"
+            name="empresa"
+            id="empresa"
+            placeholder="Empresa"
+          />
+        </div>
+        <div class="m-2 flex flex-col w-[90%] md:w-96">
+          <label class="ml-2" for="mensaje">Mensaje:</label>
+          <textarea
+            class="bg-green-950 rounded-lg px-2 text-md"
+            placeholder="mensaje"
+            name="mensaje"
+            id="mensaje"
+          ></textarea>
+        </div>
+        <p id="formStatus" class="text-sm mt-2"></p>
+        <button
+          type="submit"
+          class="border rounded-lg border-green-700 px-6 py-2 m-4 font-medium transition-transform duration-50 ease-in-out active:scale-99 active:translate-y-0.5"
+        >
+          Enviar
+        </button>
+      </fieldset>
+    </form>
+
+
+    <footer class="bg-neutral p-4 md:p-10 mt-24">
+      <div
+        class="border w-[99%] md:w-[90%] my-12 p-auto border-green-950"
+      ></div>
+      <div class="flex justify-around">
+        <aside class="flex gap-2 items-center">
+          <svg
+  width="32"
+  height="32"
+  viewBox="0 0 100 100"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="text-green-600"
+>
+  <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4"/>
+  <path
+    d="M35 70V30h18c10 0 17 6 17 15 0 8-5 13-12 14l12 11"
+    stroke="currentColor"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+          
+          <p>Raimer Aguilar © - Todos los derechos reservados</p>
+        </aside>
+        <!-- solo dejar Linkedin y github todas las demas eliminar -->
+        <nav class="flex gap-2">
+         
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/raimerag">
+            <svg aria-hidden="true" focusable="false" class="h-5 w-5 cursor-pointer transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90" viewBox="0 0 24 24" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </svg>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/raimer-aguilar-6b3315267/">
+            <svg viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="h-5 w-5 cursor-pointer transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-700/90" focusable="false">
+              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
+    <script src="./assets/js/email.js"></script>
+  </body>
+</html>
